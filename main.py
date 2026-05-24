@@ -1,7 +1,7 @@
 import random
 import requests
 
-API_KEY = "AIzaSyCEmdC1QEqsPASgfae3pIa3Ewg5wRB70ZQ"
+API_KEY = "AIzaSyAIrrnzdlyaAQsLxmxTCor6urVP_ZJ5z6c"
 
 with open("topics.txt", "r", encoding="utf-8") as f:
     topics = f.readlines()

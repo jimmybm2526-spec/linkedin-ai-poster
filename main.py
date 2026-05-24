@@ -20,7 +20,7 @@ Rules:
 - End with a question
 """
 
-url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
+url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={API_KEY}"
 
 data = {
     "contents": [
@@ -36,6 +36,4 @@ data = {
 
 response = requests.post(url, json=data)
 
-post = response.json()["candidates"][0]["content"]["parts"][0]["text"]
-
-print(post)
+print(response.text)
